@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>guessMynumber</title>
+  </head>
+  <body>
+
+    <video autoplay muted loop playsinline id="winVideo" class="bg-video">
+        <source src="play.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    <header>
+      <div class="text-container">
+      <h1>Guess My Number</h1></div>
+      <p class="between">(Between 1 and 20)</p>
+      <button onclick="myFunction()" id="replay" class="btn again">replay</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" name="guess" class="guess"/>
+        <button class="btn check">Check 🙈</button>
+      </section>
+      <section class="right">
+        <p class="message">Start Guessing 🧐👀</p>
+        <p class="label-score">🎯 Current Score: <span class="score">20</span></p>
+        <p class="lable-highscore">
+          🥇 HighScore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
